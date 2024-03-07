@@ -4,54 +4,77 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #F0F2F5;
-}
-
-.main-section {
+main {
     font-family: Helvetica, Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60vh;
 }
 
+
 .logo {
-    width: 500px;
+    text-align: center;
 }
 
-.title {
+.subtitle {
+    text-align: center;
+    padding: 20px;
+    font-size: 19px;
     font-weight: 500;
-    font-size: 25px;
-    margin: 0 0 0 30px;
-}
-
-.form-area {
-    margin-top: 80px;
 }
 
 .inputs {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 20px;
-    margin: 20px 65px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .3);
 }
 
 #emailInput, #passwordInput {
-    padding: 13px;
+    padding: 18px;
     border-radius: 8px;
+    width: 350px;
     outline: none;
     border: 1px solid #c0c2c4;
-    margin: 0 0 13px 0;
 }
 
-#emailInput:focus, #passwordInput:focus{
-    border: 1px solid #126ee7;
+#emailInput::placeholder, #passwordInput::placeholder{
+    font-size: 16px;
 }
 
+#emailInput {
+    border: 1px solid red;
+}
+
+#passwordInput {
+    margin-bottom: 10px;
+}
+
+.error-msg {
+    width: 350px;
+    font-size: 13px;
+    margin: 10px 0;
+    text-align: left;
+    font-weight: 500;
+    color: red;
+}
+
+.error-msg a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.error-msg a:hover {
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+    
+}
 
 
 .loginButton {
@@ -74,7 +97,6 @@ body{
 .passRecovery {
     text-align: center;
     padding: 0 0 25px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
 .passRecovery a {
@@ -88,11 +110,6 @@ body{
     text-decoration: underline;
 }
 
-.create-account{
-    display: flex;
-    justify-content: center;
-    padding: 25px 0 0 0;
-}
 
 .registerButton{
     padding: 15px 20px;
