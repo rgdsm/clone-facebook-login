@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0F2F5;
+}
+
+.main-section {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.logo {
+    width: 500px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0 0 0 30px;
+}
+
+.form-area {
+    margin-top: 80px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 65px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .3);
+}
+
+#emailInput, #passwordInput {
+    padding: 13px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #c0c2c4;
+    margin: 0 0 13px 0;
+}
+
+#emailInput:focus, #passwordInput:focus{
+    border: 1px solid #126ee7;
+}
+
+
+
+.loginButton {
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #126ee7;
+    background-color: #126ee7;
+    color: #fff;
+    margin: 0 0 13px 0;
+}
+
+.loginButton:hover{
+    opacity: .9;
+    transition: .6s;
+}
+
+.passRecovery {
+    text-align: center;
+    padding: 0 0 25px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.passRecovery a {
+    text-decoration: none;
+    color: #0a64f5;
+    font-size: 16px;
+
+}
+
+.passRecovery a:hover {
+    text-decoration: underline;
+}
+
+.create-account{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 0 0;
+}
+
+.registerButton{
+    padding: 15px 20px;
+    background-color: #42B72A;
+    outline: none;
+    border: 1px solid #42B72A;
+    font-weight: bold;
+    font-size:17px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.registerButton:hover{
+    background-color: #3eaa28;
+}
+
+.subtitle p {
+    padding: 0 70px;
+    font-size: 14px;
+    margin: 0;
+    width: 500px;
+    text-align: center;
+}
+
+
+.subtitle p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
